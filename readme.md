@@ -1,4 +1,8 @@
-1- create file .evn in path project
+1- run Composer install in path project
+```shell
+composer install
+```
+2- create new database name 'movies' and create file .evn in path project
 ### File .env
 
 ```php
