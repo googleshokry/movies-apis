@@ -49,10 +49,9 @@ class Movie extends ModelBasic
     public static function AddActors($movie_id)
     {
         $actors = explode(',',\request()->input('actors_list'));
-        foreach ($actors as $actor)
+        foreach ($actors as $actor_id)
         {
-            $act = Actor::firstOrCreate(array('name' => $actor));
-            MovieActor::insert(['movie_id'=>$movie_id,'actor_id'=>$act->id]);
+            MovieActor::insert(['movie_id'=>$movie_id,'actor_id'=>$actor_id]);
         }
 
     }

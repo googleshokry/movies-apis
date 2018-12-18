@@ -52,13 +52,13 @@ JWT_SECRET=wXMkigXnijzdilDFjIH8ORfauoj2lcEN
 
 3- run command in termianl
 ```shell
-php artisan migrate // create database
+php artisan migrate // create tables
 php artisan db:seed // dumy data
 ```
 
 4- run test in command in path project 
 ```shell
-phpunit
+composer test
 ```
 
 Links Apis Document
